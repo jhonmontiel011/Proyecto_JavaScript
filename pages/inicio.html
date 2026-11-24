@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio | Programming Quiz</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/inicio.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="inicio.html" class="logo">
+            PROGRAMMING<span>QUIZ</span>
+        </a>
+
+        <div class="usuario-menu">
+            <span id="nombreUsuario">Jugador</span>
+            <button id="cerrarSesion">Salir</button>
+        </div>
+
+    </header>
+
+    <main class="dashboard">
+
+        <section class="bienvenida">
+
+            <div>
+                <p class="etiqueta">PANEL DEL JUGADOR</p>
+
+                <h1>
+                    ¡Hola, <span id="nombreBienvenida">Jugador</span>!
+                </h1>
+
+                <p>
+                    ¿Listo para demostrar cuánto sabes de programación?
+                </p>
+            </div>
+
+            <div class="icono-programacion">
+                &lt;/&gt;
+            </div>
+
+        </section>
+
+        <section class="estadisticas">
+
+            <article class="tarjeta">
+                <span>⭐</span>
+                <h2 id="puntos">0</h2>
+                <p>Puntos acumulados</p>
+            </article>
+
+            <article class="tarjeta">
+                <span>🔓</span>
+                <h2 id="nivel">1</h2>
+                <p>Nivel actual</p>
+            </article>
+
+            <article class="tarjeta">
+                <span>🏆</span>
+                <h2 id="completados">0</h2>
+                <p>Niveles completados</p>
+            </article>
+
+        </section>
+
+        <section class="continuar">
+
+            <div>
+                <p class="etiqueta">TU AVENTURA COMIENZA AQUÍ</p>
+
+                <h2>¿Aceptas el desafío?</h2>
+
+                <p>
+                    Resuelve preguntas, gana puntos y desbloquea
+                    nuevos desafíos de programación.
+                </p>
+
+                <a href="niveles.html" class="btn-comenzar">
+                    EXPLORAR NIVELES →
+                </a>
+            </div>
+
+        </section>
+
+        <section class="informacion">
+
+            <h2>¿Cómo funciona?</h2>
+
+            <div class="info-grid">
+
+                <article>
+                    <span>💻</span>
+                    <h3>Aprende</h3>
+                    <p>Responde preguntas sobre diferentes lenguajes y conceptos.</p>
+                </article>
+
+                <article>
+                    <span>⚡</span>
+                    <h3>Supera retos</h3>
+                    <p>Demuestra tus conocimientos y consigue puntos.</p>
+                </article>
+
+                <article>
+                    <span>🏅</span>
+                    <h3>Progresa</h3>
+                    <p>Desbloquea niveles y mejora tus resultados.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/inicio.js"></script>
+
+</body>
+</html>

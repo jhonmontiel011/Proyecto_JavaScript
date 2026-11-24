@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desafío | Programming Quiz</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/juego.css">
+</head>
+
+<body>
+
+    <main class="juego-container">
+
+        <header class="juego-header">
+
+            <a href="niveles.html" class="salir">← Salir</a>
+
+            <span id="nombreNivel">NIVEL 1</span>
+
+            <div class="vidas" id="vidas">❤️ ❤️ ❤️</div>
+
+        </header>
+
+        <section class="panel-juego">
+
+            <div class="informacion-pregunta">
+
+                <span id="numeroPregunta">PREGUNTA 1 / 10</span>
+
+                <span id="temporizador">⏱️ 20</span>
+
+            </div>
+
+            <div class="barra">
+                <div id="progresoPregunta"></div>
+            </div>
+
+            <div class="puntos">
+                ⭐ <span id="puntos">0</span> XP
+            </div>
+
+            <h1 id="pregunta">
+                Cargando pregunta...
+            </h1>
+
+            <div class="opciones" id="opciones">
+
+            </div>
+
+            <p id="mensaje"></p>
+
+            <button id="siguiente" disabled>
+                SIGUIENTE PREGUNTA →
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="../js/juego.js"></script>
+
+</body>
+</html>

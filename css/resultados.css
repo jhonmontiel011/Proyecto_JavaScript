@@ -1,0 +1,62 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.contenedor-resultados {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+
+.contenedor-resultados h1 {
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+
+#mensajeResultado {
+    color: #ccc;
+    margin-bottom: 35px;
+}
+
+.tarjeta-resultados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.tarjeta-resultados div {
+    background: #151d2b;
+    border: 1px solid #26364b;
+    border-radius: 15px;
+    padding: 25px 12px;
+}
+
+.tarjeta-resultados span {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.tarjeta-resultados h2 {
+    color: #00e5ff;
+    font-size: 30px;
+    margin-top: 12px;
+}
+
+.botones-resultados {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .tarjeta-resultados {
+        grid-template-columns: 1fr;
+    }
+}

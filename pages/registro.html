@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crear cuenta | Programming Quiz</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+
+<body>
+
+    <main class="registro-container">
+
+        <form class="registro-form" id="formRegistro">
+
+            <a href="../index.html" class="volver">← Volver</a>
+
+            <p class="etiqueta">ÚNETE A LA EXPERIENCIA</p>
+
+            <h1>Crear cuenta</h1>
+
+            <p class="subtitulo">
+                Regístrate y comienza tu aventura en la programación.
+            </p>
+
+            <div class="campos">
+
+                <div class="campo">
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" required>
+                </div>
+
+                <div class="campo">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" required>
+                </div>
+
+                <div class="campo">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" min="13" max="100" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo" required>
+                        <option value="">Seleccionar</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                        <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                    </select>
+                </div>
+
+                <div class="campo completo">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" required>
+                </div>
+
+                <div class="campo completo">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required>
+                </div>
+
+                <div class="campo completo">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" minlength="8" required>
+                </div>
+
+                <div class="campo completo">
+                    <label for="confirmar">Confirmar contraseña</label>
+                    <input type="password" id="confirmar" minlength="8" required>
+                </div>
+
+            </div>
+
+            <div class="terminos-check">
+                <input type="checkbox" id="aceptarTerminos" required>
+
+                <label for="aceptarTerminos">
+                    Acepto los
+                    <a href="terminos.html" target="_blank">
+                        términos y condiciones
+                    </a>
+                </label>
+            </div>
+
+            <button type="submit" class="btn-registrar">
+                CREAR MI CUENTA
+            </button>
+
+            <p class="login-link">
+                ¿Ya tienes una cuenta?
+                <a href="login.html">Inicia sesión</a>
+            </p>
+
+            <p id="mensaje"></p>
+
+        </form>
+
+    </main>
+
+    <script src="../js/registro.js"></script>
+
+</body>
+</html>
